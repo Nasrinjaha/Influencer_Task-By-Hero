@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+    
+}
+ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+ul > li{
+    font-weight: 600;
+    cursor: pointer;
+}
+.brand{
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+}
+header{
+    margin: 0px 200px;
+    display: flex;
+    gap: 450px;
+    
+}
+
+/* difficult to understand*/
+
+.circle {
+    position: absolute;
+}
+
+.camera-image {
+    position: relative;
+    z-index: 1; 
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.header-info{
+    margin-top: 150px;
+}
+
+.header-title{
+    font-weight: 700;
+    font-size: 2rem; 
+}
+.header-description{
+    font-weight: 500;
+    color: gray;
+}
+.header-button{
+    height: 2.8rem;
+    width: 12.25rem;
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 1.5625rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header-button:hover{
+   background-color: white;
+   border: 2px solid #E02C6D;
+   color: black;
+   transition: 0.3s;
+}
+.arrow{
+    margin-left: 0.625rem;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 6.25rem 18.75rem;
+    padding: 3rem 0rem;
+    position: relative; /* Ensures pseudo-elements are positioned correctly */
+    cursor: pointer;
+}
+
+.logo::before,
+.logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Border thickness */
+    background: linear-gradient(90deg, 
+        rgba(128, 128, 128, 0) 0%,  /* Fully transparent at start */
+        rgb(202, 202, 202) 50%, /* Full opacity at center */
+        rgba(128, 128, 128, 0) 100% /* Fully transparent at end */
+    );
+}
+
+.logo::before {
+    top: 0; /* Positions the fading border at the top */
+}
+
+.logo::after {
+    bottom: 0; /* Positions the fading border at the bottom */
+}
+
+.card-section{
+    margin: 0rem 18.75rem;
+    position: relative;
+}
+.card-section > .card-title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.product-name{
+    font-size: 1.75rem;
+}
+.product-price{
+    font-size: 1.5rem;
+}
+.rating{
+    color: #FB8200;
+}
+.product-shifting, .product-availability, .product-description{
+     color: gray;
+     font-weight: bold;
+}
+.card-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+.item{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+}
+.item > img{
+    width: 100%;
+}
+.extra{
+    color: #E02C6D;  
+}
+.extra:hover{
+    color: #b10b48;  
+}
+.arrow2{
+    color: #E02C6D; 
+    padding-left: 10px;
+}
+.arrow2:hover{
+    color:#b10b48; 
+    
+}
+.seemore{ 
+    margin-left: 88%;
+    font-size: 1.2rem; 
+}
+
+.seemore:hover{ 
+    font-size: 1.3rem; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.features{
+    margin: 80px 350px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+.features-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.features-description{
+    color:gray;
+}
+
+.feature-button{
+    height: 2.8rem;
+    width: 10rem;
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+.feature-button:hover{
+   background-color: white;
+   border: 2px solid #E02C6D;
+   color: black;
+   transition: 0.3s;
+}
+.features-info{
+   padding-top: 30px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    color: white;
+    background-color: rgb(2, 6, 54);
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding: 70px 0px;
+}
+.footer-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.social-media{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.footer-description{
+    font-size: 0.8rem;
+    color: rgb(189, 204, 204);
+}
